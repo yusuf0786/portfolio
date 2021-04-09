@@ -6,6 +6,8 @@
 body {
 	margin: 0;
 	font-family: Arial, Helvetica, sans-serif;
+	background-color: #000;
+	color: #fff;
 }
 
 html{
@@ -99,7 +101,6 @@ main .one, main .two {
 	width: 50%;
 	height: 100%;
 	color: coral;
-	background-color: #000;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -136,15 +137,46 @@ main .two .img img {
 	}
 
 	/* main section starts here */
-	main .one, main .two {
+	main {
+		overflow: auto;
+	}
+	main .one {
 		width: 100%;
 	}
 	main .two {
 		text-align: right;
 		align-items: flex-end;
+		width: 100%;
+		height: 50%;
 	}
 	main .two .img img {
 		width: 80%;
 	}
 	/* main section ends here */
+}
+
+@media only screen and (max-width:404px) {
+	header .respul {
+		background-color: #0f0f0f;
+		position: absolute;
+		top: 93px;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.respul ul {
+		flex-direction: column;
+		padding: 0;
+	}
+	ul li {
+		margin: 20px 18px;
+	}
+	ul li a {
+		width: 100% !important;
+		text-align: left !important;
+		padding: 11px 15px !important;
+		border-radius: 4px;
+		background-color: #000;
+	}
 }
