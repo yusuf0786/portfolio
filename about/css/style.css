@@ -24,6 +24,7 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 header {
+	position: fixed;
 	display: flex;
 	justify-content: space-between;
 	background-color: #0f0f0f;
@@ -89,9 +90,8 @@ nav ul li .active {
 /* main section starts here */
 main {
 	width: 100%;
-	height: 100vh;
-	position: absolute;
-	top: 0;
+	position: relative;
+	top: 93px;
 	z-index: -1;
 	display: flex;
 	justify-content: center;
@@ -101,8 +101,8 @@ main {
 	scroll-behavior: smooth;
 }
 main .about {
-	margin-top: 280px;
 	max-width: 800px;
+	padding-top: 48px;
 }
 .about p {
 	margin-bottom: 20px;
@@ -149,7 +149,7 @@ main .about {
 		padding: 0 15px;
 	}
 	main .about {
-		margin-top: 150px;
+		padding-top: 9px;
 	}
 	/* main section ends here */
 }
@@ -161,7 +161,7 @@ main .about {
 		top: 75px;
 		left: 0;
 		width: 100%;
-		height: 100%;
+		height: 100vh;
 	}
 
 	.respul ul {
