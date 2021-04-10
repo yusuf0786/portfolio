@@ -194,4 +194,7 @@ main .two .img img {
 	main .two {
 		height: 50%;
 	}
+	main .two .img img {
+		width: 80%;
+	}
 }
