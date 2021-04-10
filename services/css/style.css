@@ -26,6 +26,8 @@ h1,h2,h3,h4,h5,h6,p {
 
 header {
 	position: fixed;
+	top: 0;
+	z-index: 1;
 	display: flex;
 	justify-content: space-between;
 	background-color: #0f0f0f;
@@ -91,15 +93,14 @@ nav ul li .active {
 /* main section starts here */
 main {
 	width: 100%;
-	position: absolute;
-	top: 0;
-	z-index: -1;
+	margin-top: 92px;
 }
 main section {
 	width: 100%;
-	height: 100%;
+	max-width: 1800px;
+	margin: 0 auto;
 	padding: 0 15px;
-	padding-top: 96px;
+	padding-top: 58px;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-evenly;
@@ -110,8 +111,7 @@ section .box {
 	background-color: #1f1f1f;
 	border-radius: 8px;
 	padding: 38px;
-	position: relative;
-	top: 20px;
+	margin-bottom: 58px;
 	opacity: 0.8;
 	transition-duration: 200ms;
 	transition-timing-function: ease-in;
@@ -140,10 +140,6 @@ section .box:hover {
 
 /* media query */
 @media only screen and (max-width:768px) {
-
-	html {
-		font-size: 10px;
-	}
 	
 	#navigation .toggle-btn {
 		display: block !important;
@@ -157,13 +153,14 @@ section .box:hover {
 	}
 
 	/* main section starts here */
-	section .box {
-		margin-bottom: 38px;
+	.box P {
+		font-size: 0.9rem;
 	}
 	/* main section ends here */
 }
 
-@media only screen and (max-width:404px) {
+@media only screen and (max-width:425px) {
+
 	header .respul {
 		background-color: #0f0f0f;
 		position: absolute;
@@ -172,7 +169,6 @@ section .box:hover {
 		width: 100%;
 		height: 100vh;
 	}
-
 	.respul ul {
 		flex-direction: column;
 		padding: 0;
@@ -186,5 +182,9 @@ section .box:hover {
 		padding: 11px 15px !important;
 		border-radius: 4px;
 		background-color: #000;
+	}
+
+	.box P {
+		font-size: 0.8rem;
 	}
 }
