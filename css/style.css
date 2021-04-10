@@ -90,11 +90,11 @@ nav ul li .active {
 main {
 	width: 100%;
 	height: 100vh;
+	position: absolute;
+	top: 0;
+	z-index: -1;
 	display: flex;
 	flex-flow: row wrap;
-	position: absolute;
-	top: 0px;
-	z-index: -1;
 	overflow: hidden;
 }
 main .one, main .two {
@@ -105,20 +105,24 @@ main .one, main .two {
 	justify-content: center;
 	align-items: center;
 }
+main .two {
+	text-align: right;
+	align-items: flex-end;
+}
 main .one .text{
-	line-height: 128px;
-	font-size: 8rem;
+	line-height: 98px;
+	font-size: 7rem;
 	font-weight: 600;
 }
 .one .white {
 	color: #fff;
 }
 .one .text h1 {
-	font-size: 8rem;
+	font-size: 7rem;
 	font-weight: 600;
 }
 main .two .img img {
-	width: 100%;
+	width: 90%;
 }
 /* main section ends here */
 
@@ -139,6 +143,7 @@ main .two .img img {
 	/* main section starts here */
 	main {
 		overflow: auto;
+		padding-top: 48px;
 	}
 	main .one {
 		width: 100%;
@@ -147,15 +152,14 @@ main .two .img img {
 		text-align: right;
 		align-items: flex-end;
 		width: 100%;
-		height: 50%;
 	}
 	main .two .img img {
-		width: 80%;
+		width: 68%;
 	}
 	/* main section ends here */
 }
 
-@media only screen and (max-width:404px) {
+@media only screen and (max-width:425px) {
 	header .respul {
 		background-color: #0f0f0f;
 		position: absolute;
@@ -178,5 +182,16 @@ main .two .img img {
 		padding: 11px 15px !important;
 		border-radius: 4px;
 		background-color: #000;
+	}
+
+	main .one .text{
+		line-height: 85px;
+		font-size: 5.6rem;
+	}
+	.one .text h1 {
+		font-size: 6rem;
+	}
+	main .two {
+		height: 50%;
 	}
 }
