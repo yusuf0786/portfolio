@@ -128,10 +128,6 @@ main .about {
 
 /* media query */
 @media only screen and (max-width:768px) {
-
-	html {
-		font-size: 10px;
-	}
 	
 	#navigation .toggle-btn {
 		display: block !important;
@@ -154,7 +150,8 @@ main .about {
 	/* main section ends here */
 }
 
-@media only screen and (max-width:404px) {
+@media only screen and (max-width:425px) {
+
 	header .respul {
 		background-color: #0f0f0f;
 		position: absolute;
