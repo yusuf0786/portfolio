@@ -113,15 +113,15 @@ section .box {
 	padding: 38px;
 	margin-bottom: 58px;
 	opacity: 0.8;
-	transition-duration: 200ms;
-	transition-timing-function: ease-in;
+	transition-duration: 280ms;
+	transition-timing-function: linear;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: space-between;
 }
 section .box:hover {
-	opacity: 1;
 	box-shadow: 0 0 28px 18px;
+	transform: scale(1.02);
 }
 .box P {
 	color: #dfdfdf;
@@ -135,6 +135,12 @@ section .box:hover {
 }
 .box a:hover {
 	color: cornflowerblue;
+}
+.box a span {
+	transition-duration: 280ms;
+}
+.box a span:hover {
+	transform: scale(1.6);
 }
 /* main section ends here */
 
