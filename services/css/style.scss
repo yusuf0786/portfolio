@@ -1,0 +1,98 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background: #1f1f1f url('../img/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg') no-repeat fixed top center;
+	background-size: cover;
+	color: #fff;
+}
+
+html {
+	font-size: 15px;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+	margin: 0;
+}
+
+@font-face {
+	font-family: pacifico;
+	src: url('../fonts/Pacifico-Regular.ttf');
+}
+
+// navigation starts
+@import '../../css/navigation';
+
+/* main section starts here */
+main {
+	width: 100%;
+}
+main section {
+	max-width: 1800px;
+	margin: 0 auto;
+	padding: 0 15px;
+    padding-top: 58px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+}
+section .box {
+	width: 380px;
+	height: 250px;
+	background-color: #1f1f1f;
+	padding: 38px;
+	margin-bottom: 58px;
+	opacity: 0.8;
+	transition-duration: 280ms;
+	transition-timing-function: linear;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+}
+section .box:hover {
+    background-color: #000;
+	border-radius: 11px;
+	box-shadow: 0 0 28px 18px;
+	transform: scale(1.02);
+}
+.box P {
+	color: #dfdfdf;
+	line-height: 20px;
+}
+.box a {
+	color: #fff;
+	text-decoration: none;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+.box a:hover {
+	color: cornflowerblue;
+}
+.box a span {
+	transition-duration: 280ms;
+}
+.box a span:hover {
+	transform: scale(1.6);
+}
+/* main section ends here */
+
+/* media query */
+@media only screen and (max-width:768px) {
+
+	/* main section starts here */
+	.box P {
+		font-size: 0.9rem;
+	}
+	/* main section ends here */
+}
+
+@media only screen and (max-width:425px) {
+
+	.box P {
+		font-size: 0.8rem;
+	}
+}

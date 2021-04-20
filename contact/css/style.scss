@@ -1,0 +1,93 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	background: #000;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #fff;
+}
+
+html{
+	font-size: 15px;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+}
+
+@font-face {
+	font-family: pacifico;
+	src: url('../fonts/Pacifico-Regular.ttf');
+}
+
+// navigation starts
+@import '../../css/navigation';
+
+/* main section starts here */
+main {
+	margin-top: 93px;
+}
+main .contact {
+	max-width: 800px;
+	margin: 0 auto;
+}
+main hgroup {
+	padding-top: 58px;
+	margin-bottom: 100px;
+}
+hgroup h1 {
+	font-size: 6rem;
+	font-weight: 600;
+}
+main .text {
+	padding-left: 150px;
+}
+.text h1 {
+	margin-bottom: 38px;
+	font-weight: 600;
+}
+.text p {
+	margin-bottom: 28px;
+	font-size: 1.2rem;
+	line-height: 33px;
+}
+.text a {
+	display: block;
+	color: red;
+	font-weight: 600;
+	font-size: 1.2rem;
+	text-decoration: none;
+	cursor: pointer;
+	margin-bottom: 28px;
+	transition-duration: 500ms;
+}
+.text a .message {
+	display: none;
+}
+.text a:hover {
+	transform: translateX(80px);
+}
+/* main section ends here */
+
+/* media query */
+@media only screen and (max-width:768px) {
+	
+	/* main section starts here */
+	main {
+		padding: 0 15px;
+	}
+	.text p {
+		line-height: 20px;
+	}
+	/* main section ends here */
+}
+
+@media only screen and (max-width:425px) {
+
+	main .text {
+		padding-left: 80px;
+	}
+}
