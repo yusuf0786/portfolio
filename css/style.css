@@ -25,6 +25,9 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 header {
+  position: fixed;
+  z-index: 1;
+  top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,12 +134,11 @@ header nav .button2 {
 @media only screen and (max-width: 425px) {
   header .respul {
     background-color: #0f0f0f;
-    position: absolute;
-    z-index: 10;
-    top: 93px;
-    left: 0;
     width: 100%;
     height: 100vh;
+    position: absolute;
+    top: 93px;
+    left: 0;
   }
   .respul ul {
     -webkit-box-orient: vertical;
@@ -161,9 +163,8 @@ header nav .button2 {
 /* main section starts here */
 main {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   position: absolute;
-  top: 0;
   z-index: -1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -177,7 +178,6 @@ main {
 
 main .one, main .two {
   width: 50%;
-  height: 100%;
   color: coral;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -226,6 +226,9 @@ main .two .img img {
   }
   main .one {
     width: 100%;
+  }
+  main .one .text {
+    margin-top: 80px;
   }
   main .two {
     text-align: right;

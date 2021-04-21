@@ -87,6 +87,9 @@ main .text {
 
 @media only screen and (max-width:425px) {
 
+	hgroup h1 {
+		font-size: 4.6rem;
+	}
 	main .text {
 		padding-left: 80px;
 	}

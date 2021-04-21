@@ -67,17 +67,6 @@ main .about {
 
 /* media query */
 @media only screen and (max-width:768px) {
-	
-	// #navigation .toggle-btn {
-	// 	display: block !important;
-	// }
-	// #navigation .toggle-btn .button2 {
-	// 	display: none;
-	// }
-	// header nav .respul {
-	// 	display: none;
-	// 	align-self: center;
-	// }
 
 	/* main section starts here */
 	main {
@@ -91,4 +80,7 @@ main .about {
 
 @media only screen and (max-width:425px) {
     
+	main .about {
+		padding-top: 38px;
+	}
 }
