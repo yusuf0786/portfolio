@@ -212,8 +212,8 @@ main .text {
 }
 
 .text a:hover {
-  -webkit-transform: translateX(80px);
-          transform: translateX(80px);
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
 }
 
 /* main section ends here */
